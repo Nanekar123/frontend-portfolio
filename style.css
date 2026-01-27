@@ -1,121 +1,162 @@
+/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
     color: #333;
-    transition: 0.3s ease;
+    scroll-behavior: smooth;
 }
 
-/* Navbar */
-nav {
+/* Header / Navbar */
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    background-color: #222;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav .logo {
-    color: #fff;
+header nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6600;
 }
 
-nav ul {
-    display: flex;
+header nav ul {
     list-style: none;
+    display: flex;
+    gap: 1.5rem;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+header nav ul li a {
     text-decoration: none;
-    transition: 0.3s;
+    color: #333;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #00adb5;
+header nav ul li a:hover {
+    color: #ff6600;
 }
 
 #themeToggle {
-    padding: 6px 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
 /* Sections */
 section {
-    padding: 60px 40px;
-    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
 }
 
-h1, h2 {
-    margin-bottom: 15px;
+section h1, section h2 {
+    color: #ff6600;
+    margin-bottom: 1rem;
 }
 
-/* Animated text */
+/* Animated Text */
 .animated-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #ff6600;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
     font-weight: bold;
-    color: #00adb5;
-    animation: fade 2s infinite;
+    margin-bottom: 1rem;
 }
 
-@keyframes fade {
-    0% { opacity: 0.3; }
-    50% { opacity: 1; }
-    100% { opacity: 0.3; }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
-/* Projects */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ff6600; }
+}
+
+/* Project Cards */
 .project-card {
-    background: white;
-    padding: 20px;
-    margin: 15px auto;
-    width: 60%;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    background: #f5f5f5;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
-    transform: scale(1.03);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-/* Achievements */
-#achievements ul {
-    list-style: none;
+/* Achievements List */
+ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
 }
 
-#achievements li {
-    margin: 10px 0;
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-/* Contact */
 .social-links a {
-    margin: 0 10px;
     text-decoration: none;
-    color: #00adb5;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+    color: #ff6600;
 }
 
-/* Dark Mode */
-.dark {
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Dark Theme */
+body.dark-theme {
     background-color: #121212;
-    color: #fff;
+    color: #e0e0e0;
 }
 
-.dark nav {
-    background-color: #000;
+body.dark-theme nav {
+    background-color: #1f1f1f;
 }
 
-.dark .project-card {
+body.dark-theme .project-card {
     background-color: #1e1e1e;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+
+body.dark-theme .social-links a {
+    color: #e0e0e0;
+}
+
+body.dark-theme footer {
+    background-color: #1f1f1f;
 }
