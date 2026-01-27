@@ -160,3 +160,24 @@ body.dark-theme .social-links a {
 body.dark-theme footer {
     background-color: #1f1f1f;
 }
+/* About Section Layout */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Profile Image Size */
+.profile-img {
+    width: 150px;          /* profile size */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff6600;
+}
+
+/* About Text */
+.about-text {
+    max-width: 500px;
+}

@@ -4,74 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supriya's Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header>
-        <nav>
-            <h2 class="logo">SupriyaPortfolio</h2>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="themeToggle">🌙</button>
-        </nav>
-    </header>
+<!-- Header -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">SupriyaPortfolio</h2>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
 
-    <!-- About Section -->
-    <main>
-        <section id="about">
-            <h1>Hello, I'm Supriya</h1>
-            <p class="animated-text">Frontend Developer | Learner | Problem Solver</p>
+<!-- About Section -->
+<section id="about">
+    <div class="about-container">
+        <img src="supriya.jpeg" alt="Supriya Nanekar" class="profile-img">
+
+        <div class="about-text">
+            <h1>Hello, I'm <span>Supriya</span></h1>
+            <p class="animated-text">
+                Frontend Developer | Learner | Problem Solver
+            </p>
             <p>
                 I am a passionate learner exploring web development.
-                I enjoy creating simple and user-friendly websites using HTML, CSS, and JavaScript.
+                I enjoy creating simple and user-friendly websites using
+                HTML, CSS, and JavaScript.
             </p>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio built using HTML, CSS, and JavaScript.</p>
-            </div>
-            <div class="project-card">
-                <h3>Sales Dashboard</h3>
-                <p>Created a sales insights dashboard using Power BI.</p>
-            </div>
-        </section>
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
 
-        <!-- Achievements Section -->
-        <section id="achievements">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Completed Data Analytics Course with A+ Grade</li>
-                <li>Built multiple frontend mini projects</li>
-            </ul>
-        </section>
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built using HTML, CSS, and JavaScript.</p>
+    </div>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: supriya@email.com</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-            </div>
-        </section>
-    </main>
+    <div class="project-card">
+        <h3>Sales Dashboard</h3>
+        <p>Created a sales insights dashboard using Power BI.</p>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Supriya Nanekar. All rights reserved.</p>
-    </footer>
+<!-- Achievements -->
+<section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Completed Data Analytics Course with A+ Grade</li>
+        <li>Built multiple frontend mini projects</li>
+    </ul>
+</section>
 
-    <script src="script.js"></script>
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <strong>supriya@email.com</strong></p>
+
+    <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Supriya Nanekar. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
