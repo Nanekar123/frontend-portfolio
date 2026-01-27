@@ -41,12 +41,9 @@ The objective of this assignment is to:
 
 ---
 
-## 📂 Project Structure
-frontend-portfolio
-│── index.html # Main HTML file
-│── style.css # CSS styling and animations
-│── script.js # JavaScript functionality
-│── README.md # Project documentation
+## 📁 Project Structure
+
+
 
 ---
 
