@@ -40,9 +40,12 @@ The objective of this assignment is to:
 > No frameworks or libraries (React, Bootstrap, etc.) were used.
 
 ---
-
 ## 📁 Project Structure
-
+frontend-portfolio
+│── index.html # Main HTML file
+│── style.css # CSS styling and layout
+│── script.js # JavaScript functionality
+│── README.md # Project documentation
 
 
 ---
