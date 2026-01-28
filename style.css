@@ -170,11 +170,11 @@ body.dark-theme footer {
 
 /* Profile Image Size */
 .profile-img {
-    width: 150px;          /* profile size */
-    height: 150px;
+    width: 220px;
+    height: 260px;   /* taller so head fits */
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #ff6600;
+    object-position: top;
 }
 
 /* About Text */
