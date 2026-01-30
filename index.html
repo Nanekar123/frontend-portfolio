@@ -3,172 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supriya's Portfolio</title>
+    <title>Supriya Nanekar | Creative Portfolio</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<!-- Header -->
-<header>
-    <nav class="navbar">
-        <h2 class="logo">SupriyaPortfolio</h2>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="themeToggle">🌙</button>
-    </nav>
-</header>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hi, I’m <span>Supriya</span></h1>
+        <h2>Frontend Developer & Tech Explorer</h2>
+        <p>
+            I design clean, modern, and interactive web experiences.
+            Passionate about frontend, Java, and data-driven solutions.
+        </p>
 
-<!-- About Section -->
-<section id="about">
-    <div class="about-container">
-        <img src="supriya.jpeg" alt="Supriya Nanekar" class="profile-img">
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+    </div>
 
-        <div class="about-text">
-            <h1>Hello, I'm <span>Supriya</span></h1>
-            <p class="animated-text">
-                Frontend Developer | Learner | Problem Solver
-            </p>
-            <p>
-                I am a passionate learner and aspiring web developer currently pursuing my Master of Computer Applications (MCA) 
-                at Pimpri Chinchwad University. I enjoy building clean, simple, and user-friendly websites using HTML, CSS, and JavaScript.
-                Along with web development, I am skilled in Java, SQL, and Data Analysis, and I continuously work on improving my technical 
-                and problem-solving abilities. I am highly motivated to learn new technologies and aim to grow as a versatile IT professional
-                 by creating meaningful, real-world solutions.
-            </p>
+    <div class="hero-image">
+        <img src="supriya.jpeg" alt="Supriya Nanekar">
+    </div>
+</section>
+
+<!-- SKILLS STRIP -->
+<section class="skills-strip">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Java</div>
+    <div>SQL</div>
+    <div>Power BI</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal responsive portfolio with animations and clean UI.</p>
+            <span>HTML • CSS • JS</span>
+        </div>
+
+        <div class="project-card">
+            <h3>Sales Insights Dashboard</h3>
+            <p>Interactive business dashboard for sales analysis.</p>
+            <span>Power BI • SQL</span>
+        </div>
+
+        <div class="project-card">
+            <h3>Smart Pharma System</h3>
+            <p>Web-based medical & pharmacy management platform.</p>
+            <span>JSP • Servlets • MySQL</span>
+        </div>
+
+        <div class="project-card">
+            <h3>Employee Management</h3>
+            <p>CRUD-based system for managing employee records.</p>
+            <span>Java • JDBC</span>
         </div>
     </div>
 </section>
 
-<!-- Projects -->
-<!-- Projects -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-            Designed and developed a fully responsive personal portfolio website
-            using HTML, CSS, and JavaScript. The website highlights my skills,
-            projects, achievements, and contact information with a clean UI.
-            Implemented dark/light theme toggle and smooth navigation for
-            better user experience.
-        </p>
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Sales Insights Dashboard (Power BI)</h3>
-        <p>
-            Created an interactive Sales Insights Dashboard using Power BI to
-            analyze company sales data. The dashboard provides insights into
-            total revenue, sales trends, top-performing products, and regional
-            performance. Used data cleaning and transformation techniques to
-            improve data accuracy and visualization quality.
-        </p>
-        <p><strong>Technologies:</strong> Power BI, SQL, Excel</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Smart Pharma Management System</h3>
-        <p>
-            Developed a web-based medical management system to streamline
-            pharmacy and hospital operations. The system includes Admin and
-            Doctor login, patient management, prescription uploads, medical
-            report handling, and secure payment processing. Designed the
-            database schema and implemented backend logic using Java.
-        </p>
-        <p><strong>Technologies:</strong> JSP, Servlets, JDBC, MySQL, HTML, CSS</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Employee Management System</h3>
-        <p>
-            Built an Employee Management System to efficiently manage employee
-            records. The application allows users to add, update, view, and
-            delete employee information while maintaining data integrity
-            through a structured database design.
-        </p>
-        <p><strong>Technologies:</strong> Java, JDBC, MySQL</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Student Performance Prediction</h3>
-        <p>
-            Developed a data analytics and machine learning project to predict
-            student academic performance using historical data. Performed data
-            preprocessing, exploratory data analysis, and applied predictive
-            models to identify performance trends and patterns.
-        </p>
-        <p><strong>Technologies:</strong> Python, Pandas, NumPy, Machine Learning</p>
-    </div>
-</section>
-
-<section id="achievements">
+<!-- ACHIEVEMENTS -->
+<section class="achievements">
     <h2>Achievements</h2>
-    <ul>
-        <li>Completed Data Analytics Course with <strong>A+ Grade</strong></li>
-        <li>Successfully built and deployed multiple frontend web projects</li>
-        <li>Secured top rank in semester examination</li>
-        <li>Hands-on experience with real-world datasets and dashboards</li>
-        <li>Strong foundation in Java, SQL, and web development fundamentals</li>
-        <li>Actively learning and applying new technologies through projects</li>
-    </ul>
-</section>
-<!-- Contact -->
-<section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
 
-    <p class="contact-email">
-        Email: <a href="mailto:supriya@email.com">supriya@email.com</a>
-    </p>
-    <div class="social-connect">
-    <p>Connect with me:</p>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/your-github-username" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://twitter.com/your-twitter-username" target="_blank">
-            <i class="fab fa-twitter"></i>
-        </a>
+    <div class="achievement-cards">
+        <div class="ach-card">🏆 A+ Grade in Data Analytics</div>
+        <div class="ach-card">🚀 Multiple Real-World Projects</div>
+        <div class="ach-card">💡 Strong Java & SQL Foundation</div>
+        <div class="ach-card">📊 Hands-on Analytics Experience</div>
     </div>
-</div>
+</section>
 
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Let’s Connect</h2>
+    <p>Open for opportunities, internships, and collaborations.</p>
 
-    <p class="contact-note">
-        You can also refer to the contact form below...!
-    </p>
+    <div class="contact-box">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
 
-    <form class="contact-form">
-        <label>Name</label>
-        <input type="text" placeholder="Your name" required>
-
-        <label>Email</label>
-        <input type="email" placeholder="Your email" required>
-
-        <label>Message</label>
-        <textarea rows="4" placeholder="Your message..." required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
+        <div class="socials">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Supriya Nanekar. All rights reserved.</p>
+    © 2026 Supriya Nanekar | Designed with 💜
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
