@@ -209,3 +209,85 @@ footer {
     font-size: 14px;
     color: #555;
 }
+/* =========================
+   DARK THEME STYLES
+========================= */
+
+body.dark-theme {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #f1f1f1;
+}
+
+/* Navbar */
+body.dark-theme header nav {
+    background: rgba(20, 20, 20, 0.95);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+body.dark-theme nav ul li a {
+    color: #f1f1f1;
+}
+
+/* Sections */
+body.dark-theme section {
+    background: transparent;
+}
+
+/* Headings */
+body.dark-theme h1 span,
+body.dark-theme h2 {
+    color: #ff944d;
+}
+
+/* About image border */
+body.dark-theme .profile-img {
+    border-color: #ff944d;
+}
+
+/* Project cards */
+body.dark-theme .project-card {
+    background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+/* Achievements */
+body.dark-theme #achievements li {
+    background: #1f1f1f;
+    color: #f1f1f1;
+}
+
+/* Contact section */
+body.dark-theme .contact-section {
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+}
+
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+    background: #1f1f1f;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+/* Footer */
+body.dark-theme footer {
+    background: #1a1a1a;
+    color: #aaa;
+}
+
+/* Social icons */
+body.dark-theme .social-icons a {
+    color: #ff944d;
+}
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    background: #ff6600;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    z-index: 2000;
+}
